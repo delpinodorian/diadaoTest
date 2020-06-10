@@ -1,0 +1,470 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 360px;
+
+.container{
+   max-width: 1366px;
+   background-color: #F9F9F9;
+}
+
+#bandeau-menu{
+	max-height:100px;
+	background:linear-gradient(#F9F9F9, white);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	align-items: center;
+	z-index:1000;
+
+	a {
+		height:100%;
+		color:grey;
+		display: flex;
+   	 	align-items: center;
+   	 	margin-left:2%;
+   	 	opacity: 1;	
+	}
+
+	div{
+		display: flex;
+  		align-items: center;
+        justify-content: center;
+
+        button{ 
+        	background-color:#8A962B;
+        	color: white;
+        	height: 50px;
+        	width: 150px;
+        	border-radius: 0;
+        	margin-left:220px;
+        	text-transform: uppercase;
+        	@media (min-width: $breakpoint-tablet) {
+        		margin-left:44px;
+        		height: 50px;
+        	}
+        	@media (max-width: $breakpoint-mobile) {
+        		height: 30px;
+        		width: 80px;
+        		font-size:12px;
+        		margin-left:10px;
+        	}
+
+        }
+	}	
+}
+carousel-content{
+	max-height :768px;
+}
+
+#carousel-caption{
+	height:300px;
+	width: 400px;
+	display:flex;
+	flex-direction: column;
+	justify-content:space-around;
+	position:absolute;
+	top:240px;
+	left: 230px;
+	z-index: 999;
+
+	img{
+		padding:10px;
+	}
+
+	p{
+		
+		text-align: center;
+		font: Regular 14px/19px Open Sans;
+		letter-spacing: 1.4px;
+		color: #7998BC;
+		opacity: 1;
+	}
+
+	button{
+		margin:auto;
+		height:50px;
+		width: 170px;
+		border: 1px solid #7998BC;
+		color: #7998BC;
+		background-color: transparent;
+		text-transform: uppercase;
+		text-align:center;
+		font-family: Semibold 14px/19px Open Sans;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+    	top:60px;
+		left: 105px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+    	top:40px;
+		left: 80px;
+		height:118px;
+		width: 200px;
+
+		p{	
+			padding:0px;
+			text-align: center;
+			font: Regular 14px/19px Open Sans;
+			font-size: 8px;
+			letter-spacing: 1.4px;
+			color: #7998BC;
+			opacity: 1;
+		}
+
+		button{
+			font-size: 10px;
+			height:20px;
+			width: 100px;
+		}
+    }
+}
+
+
+#paralax-1{
+	margin-top: 150px;
+	height: 470px;
+
+	#texte{
+		text-align:center;
+		position:absolute;
+		top: 50px;
+		right: 241px;
+		width: 270px;
+		text-transform: uppercase;
+
+		h3{
+			text-align: center;
+			font: Light 18px/24px Open Sans;
+			letter-spacing: 0px;
+			color: #8A962B;
+		}
+
+		h2{
+			font: Semibold 24px/33px Open Sans;
+			letter-spacing: 0px;
+			color: #000000;
+		}
+
+		p{
+			font: Regular 14px/24px Open Sans;
+			letter-spacing: 1.4px;
+			color: #624835;
+		}
+	}
+
+	img{
+		display: block;
+ 		max-width: 100%;
+ 		height: auto;
+	}
+
+	.parallax {
+	  /* The image used */
+	  background-image: url("../../../img/assets/Shoot1-433-15.jpg");
+	  /* Set a specific height */
+	  min-height: 470px; 
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  width:640px;
+	  position:absolute;
+	  left: 154px;
+	}
+
+	#horizontal {
+
+		img{
+			position:absolute;
+			width:493px;
+			height:185px;
+			top:237px;
+			right: 154px;
+		}
+	}
+
+	@media (min-width: $breakpoint-tablet) {
+	 	margin-left:auto;
+	 	margin-right:auto;
+	 	
+    	width :100%;
+
+    	#texte{
+	    	position:absolute;
+			top: 50px;
+			right: 50px;
+			width: 270px;
+    	}
+
+    	.parallax{
+    		left: 0px;
+    		width: 370px;
+    	}
+
+    	#horizontal {
+
+			img{
+				position:absolute;
+				width:493px;
+				height:185px;
+				top:237px;
+				right: 20px;
+			}
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*   @media (max-width: $breakpoint-mobile) {
+	 	margin-left:auto;
+	 	margin-right:auto;
+    	width :100%;
+
+    	#texte{
+	    	position:absolute;
+			top: 20px;
+			left: 200px;
+			width: 100px;
+			font-size:8px;
+			h3{
+				font-size:15px;
+			}
+			h2{
+				font-size:15px;
+			}
+    	}
+
+    	.parallax{
+    		width:180px;
+    		min-height:300px;
+    		left:0%;
+    	}
+
+    	#horizontal {
+
+			img{
+				position:absolute;
+				width:200px;
+				height:100px;
+				top:160px;
+				left: 116px;
+			}
+		}
+    }*/
+
+
+
+
+
+
+
+
+
+}
+
+#paralax-2{
+	margin-top: 150px;
+	min-height: 768px;
+
+	#texte{
+		text-align:center;
+		position:absolute;
+		top: 84px;
+		left: 307px;
+		width: 287px;
+		text-transform: uppercase;
+
+		h3{
+
+			text-align: center;
+			font: Light 18px/24px Open Sans;
+			letter-spacing: 0px;
+			color: #8A962B;
+		}
+
+		h2{
+			font: Semibold 24px/33px Open Sans;
+			letter-spacing: 0px;
+			color: #000000;
+		}
+
+		p{
+			font: Regular 14px/24px Open Sans;
+			letter-spacing: 1.4px;
+			color: #624835;
+		}
+	}
+
+	img{
+		display: block;
+ 		max-width: 100%;
+ 		height: auto;
+	}
+
+	.parallax {
+	  /* The image used */
+	  background-image: url("../../../img/assets/chambre22-123-15.jpg");
+	  /* Set a specific height */
+	  min-height: 768px; 
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  width:450px;
+	  position:absolute;
+	  left: 683px;
+	}
+
+	#horizontal {
+
+		img{
+			position:absolute;
+			width:556px;
+			height:353px;
+			top:376px;
+			left: 223px;
+			transform: scaleX(-1);
+			
+		}
+	}
+
+	@media (min-width: $breakpoint-tablet) {
+	 	margin-left:auto;
+	 	margin-right:auto;
+    	width :100%;
+
+    	#texte{
+	    	position:absolute;
+			top: 130px;
+			left: 45px;
+			width: 270px;
+			font-size:12px;
+    	}
+
+    	.parallax{
+    		width:400px;
+    		left:46%;
+    	}
+
+    	#horizontal {
+
+			img{
+				position:absolute;
+				width:383px;
+				height:285px;
+				top:444px;
+				left: 40px;
+			}
+		}
+    }
+}
+
+#vignettes-prestations{
+	margin-top: 150px;
+	display:flex;
+	justify-content:space-around;
+	aligns-items: center;
+
+	.vignette{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+
+		img{
+			position:absolute;
+		}
+
+		.vignette-content{
+			width: 405px;
+			height: 395px;
+			margin-top :208px;
+			padding-top : 78px;
+			padding-left: 25px;
+			padding-right:35px;
+			padding-bottom :35px;	
+			background-color: #FFFFFF;
+			box-shadow: 0px 0px 28px #00000029;
+			display :flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+
+			h2{
+				text-align: left;
+				font-family: Semibold 20px/27px Open Sans;
+				font-size: 20px;
+				font-weight: bold;
+				letter-spacing: 0px;
+				color: #000000;
+				opacity: 1;
+			}
+
+			.prix{	
+				height :120px;
+				width:345px;
+				position: relative;
+				bottom:0px;
+				display:flex;
+				flex-direction : column;
+				justify-content : space-between;
+
+				.prix-presta{
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
+
+					h2{
+						font-weight: normal;
+						text-transform: uppercase;
+					}
+
+					p{
+						text-align: right;
+					}
+				}
+
+				button{
+					width:100%;
+					height: 45px;
+					background-color:#8A962B;
+		        	color: white;
+		        	border-radius: 0;
+		        	border:none;
+		        	margin-bottom: 0px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		@media (min-width: $breakpoint-tablet) {
+			margin-top:30px;
+		}
+	}
+	
+}
+
+#footer{
+	
+	margin-top : 150px;
+	margin-bottom: 47px;
+}
+
+
